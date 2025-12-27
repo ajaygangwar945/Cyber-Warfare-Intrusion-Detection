@@ -120,8 +120,16 @@ CyberWarfare-Intrusion-Detection/
 
 ### 2️⃣ Navigate to the project directory
    ```bash
-   cd pet-adoption-animal-welfare
+   cd CyberWarfare-Intrusion-Detection
    ```
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Run the Notebook
+```bash
+jupyter notebook
+```
 ---
 
 ## 📊 Results & Performance
@@ -131,12 +139,23 @@ CyberWarfare-Intrusion-Detection/
 - 📉 **Reduced False Positives** through feature selection  
 - 📊 **Visual Insights** using confusion matrix & accuracy plots  
 
-<div align="center">
+<div align="left">
 
 ![Accuracy](https://img.shields.io/badge/Model-High%20Accuracy-brightgreen?style=for-the-badge)
 ![Evaluation](https://img.shields.io/badge/Evaluation-Precision%20%7C%20Recall%20%7C%20F1-blue?style=for-the-badge)
 
 </div>
+
+---
+
+## 📈 Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
 
 ---
 
@@ -157,23 +176,27 @@ CyberWarfare-Intrusion-Detection/
 - ✔️ Data Science Workflow  
 - ✔️ Suitable for Minor / Major / Final Year Project  
 
-## 📬 Contact
-
-**Ajay Gangwar**  
-🎓 Student | Cyber Security | Data Science  
-
-- GitHub: https://github.com/ajaygangwar945  
-- Email: your-email@example.com
+---
 
 ## 📬 Contact
 
 **Ajay Gangwar**  
+
 🎓 Student | Cyber Security | Data Science  
+
+<div align="left">
+
+[![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github)](https://github.com/ajaygangwar945)
+[![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:ajayganwar945@gmail.com)
+
+</div>
+
+---
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github)](https://github.com/ajaygangwar945)
-[![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:your-email@example.com)
+⭐ Star this repository if you found it useful  
+🛡️ Built with Machine Learning for Cyber Defense  
 
 </div>
 
