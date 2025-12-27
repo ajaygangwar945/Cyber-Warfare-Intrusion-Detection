@@ -1,14 +1,33 @@
-# 🛡️ Cyber Warfare Intrusion Detection System
+<h1 align="center"> 🛡️ Cyber Warfare Intrusion Detection System </h1>
 
-### Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Modeling-blue?style=for-the-badge)
+![Cyber Security](https://img.shields.io/badge/Cyber-Security-critical?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+</div>
+
+<p align="center">
+<b>Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning</b>
+</p>
 
 ---
 
 ## 📌 Project Overview
-The **Cyber Warfare Intrusion Detection System** is a cybersecurity project designed to detect **malicious activities and cyber attacks** within a network.  
-Using **machine learning algorithms**, the system classifies network traffic as **normal or intrusive**, helping to identify cyber warfare threats such as **DDoS attacks, probing, malware, and unauthorized access**.
 
-This project demonstrates real-world applications of **Cyber Security, Data Analysis, and Machine Learning**.
+<p align="justify">
+The <b>Cyber Warfare Intrusion Detection System</b> is a cybersecurity project designed to detect <b>malicious activities and cyber attacks</b> within a network. Using <b>machine learning algorithms</b>, the system classifies network traffic as <b>normal or intrusive</b>, helping to identify cyber warfare threats such as <b>DDoS attacks, probing, malware, and unauthorized access</b>.
+</p>
+
+<p align="justify">
+This project demonstrates real-world applications of <b>Cyber Security</b>, <b>Data Analysis</b>, and <b>Machine Learning</b>.
+</p>
 
 ---
 
@@ -75,7 +94,11 @@ CyberWarfare-Intrusion-Detection/
 ├── README.md
 └── requirements.txt
 ```
+---
+
 ## 🛠️ Technologies Used
+
+<div align="left">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Modeling-blue?style=for-the-badge)
@@ -83,81 +106,74 @@ CyberWarfare-Intrusion-Detection/
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikitlearn)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge)
 
+</div>
+
+
 ---
 
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Clone the Repository
-```bash
-git clone [https://github.com/your-username/CyberWarfare-Intrusion-Detection.git](https://github.com/your-username/CyberWarfare-Intrusion-Detection.git)
-cd CyberWarfare-Intrusion-Detection
-```
+   ```bash
+   git clone https://github.com/your-username/CyberWarfare-Intrusion-Detection.git
+   ```
 
-🛠️ Technologies Used
-🚀 How to Run the Project
-1️⃣ Clone the Repository
-Bash
+### 2️⃣ Navigate to the project directory
+   ```bash
+   cd pet-adoption-animal-welfare
+   ```
+---
 
-git clone [https://github.com/your-username/CyberWarfare-Intrusion-Detection.git](https://github.com/your-username/CyberWarfare-Intrusion-Detection.git)
-cd CyberWarfare-Intrusion-Detection
+## 📊 Results & Performance
 
-2️⃣ Install Dependencies
-Bash
+- 📈 **High Detection Accuracy** using ensemble models  
+- 🔎 **Effective Attack Classification** (Normal vs Intrusion)  
+- 📉 **Reduced False Positives** through feature selection  
+- 📊 **Visual Insights** using confusion matrix & accuracy plots  
 
-pip install -r requirements.txt
-3️⃣ Run the Notebook
-Bash
+<div align="center">
 
-jupyter notebook
-Open intrusion_detection.ipynb and run all cells.
+![Accuracy](https://img.shields.io/badge/Model-High%20Accuracy-brightgreen?style=for-the-badge)
+![Evaluation](https://img.shields.io/badge/Evaluation-Precision%20%7C%20Recall%20%7C%20F1-blue?style=for-the-badge)
 
-📊 Results & Performance
-📈 High Detection Accuracy: Optimized models provide high-precision detection.
+</div>
 
-🔎 Efficient Classification: Detailed breakdown of specific attack types.
+---
 
-📉 Reduced False Positives: Fine-tuned thresholds for mission-critical systems.
+## 🔐 Cyber Warfare Use Cases
 
-📊 Visual Analysis: Heatmaps and ROC curves for performance verification.
+- 🪖 Military & defense networks  
+- 🏛️ Government infrastructure  
+- 💳 Financial institutions  
+- 🏢 Enterprise security systems  
+- ⚡ Critical infrastructure protection  
 
-🔐 Cyber Warfare Use Cases
-Military & defense networks
+---
 
-Government systems
+## 🧑‍🎓 Academic Relevance
 
-Financial institutions
+- ✔️ Cyber Security Project  
+- ✔️ Machine Learning Application  
+- ✔️ Data Science Workflow  
+- ✔️ Suitable for Minor / Major / Final Year Project  
 
-Enterprise security monitoring
+## 📬 Contact
 
-Critical infrastructure protection
+**Ajay Gangwar**  
+🎓 Student | Cyber Security | Data Science  
 
-🧑‍🎓 Academic Relevance
-✔️ Cyber Security Project
+- GitHub: https://github.com/ajaygangwar945  
+- Email: your-email@example.com
 
-✔️ Machine Learning Application
+## 📬 Contact
 
-✔️ Data Science Workflow
+**Ajay Gangwar**  
+🎓 Student | Cyber Security | Data Science  
 
-✔️ Suitable for Minor / Major / Final Year Project
+<div align="center">
 
-📄 License
-This project is licensed under the MIT License.
+[![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github)](https://github.com/ajaygangwar945)
+[![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:your-email@example.com)
 
-🤝 Contribution
-Contributions are welcome!
+</div>
 
-Fork the repository.
-
-Create your feature branch (git checkout -b feature/NewFeature).
-
-Commit your changes (git commit -m 'Add some NewFeature').
-
-Push to the branch (git push origin feature/NewFeature).
-
-Open a Pull Request.
-
-📬 Contact
-Ajay Gangwar Student | Cyber Security | Data Science
-
-
-**Would you like me to help you draft the `requirements.txt` file or create a sample s
