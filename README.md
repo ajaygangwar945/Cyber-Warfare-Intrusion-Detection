@@ -12,10 +12,13 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-00d4ff?style=for-the-badge)](https://cyber-warfare-intrusion-detection.onrender.com)
+
 </div>
 
 <p align="center">
-<b>Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning</b>
+<b>Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning</b><br>
+🔗 <a href="https://cyber-warfare-intrusion-detection.onrender.com" target="_blank"><b>Live Demo Available!</b></a>
 </p>
 
 ---
@@ -462,7 +465,8 @@ By exploring this web application, you'll learn:
 
 #### 1. **Render** (⭐ Best for Students - Free)
 
-- ✅ Free tier with no credit card required
+* ✅ Free tier with no credit card required
+
 * ✅ Automatic GitHub deployments
 * ✅ HTTPS included
 * ✅ Easy setup (5 minutes)
@@ -478,7 +482,8 @@ By exploring this web application, you'll learn:
 
 #### 2. **PythonAnywhere** (Great for Flask)
 
-- ✅ Free tier for Flask applications
+* ✅ Free tier for Flask applications
+
 * ✅ No credit card needed
 * ✅ Perfect for academic projects
 
@@ -486,7 +491,8 @@ By exploring this web application, you'll learn:
 
 #### 3. **Railway** (Modern & Fast)
 
-- ✅ $5 free monthly credit
+* ✅ $5 free monthly credit
+
 * ✅ Automatic deployments
 * ✅ Fast performance
 
@@ -494,7 +500,8 @@ By exploring this web application, you'll learn:
 
 #### 4. **Heroku** (Industry Standard)
 
-- ⚠️ Paid only (starts at $5/month)
+* ⚠️ Paid only (starts at $5/month)
+
 * ✅ Professional grade
 * ✅ Easy scaling
 
