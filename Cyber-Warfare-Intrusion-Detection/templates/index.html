@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Warfare Intrusion Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🛡️</div>
+                <div>
+                    <h2 style="margin: 0; font-size: 1.5rem;">CYBER WARFARE</h2>
+                    <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Intrusion Detection System
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button class="btn btn-secondary" onclick="toggleTheme()" id="theme-toggle">
+                    <span id="theme-icon">☀️</span> Light Mode
+                </button>
+                <button class="btn btn-primary" onclick="startSimulation()">
+                    <span id="sim-btn-text">Start Live Detection</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🔒 ADVANCED THREAT DETECTION</h1>
+            <p>Real-time network intrusion detection powered by machine learning. Protecting your infrastructure from
+                cyber warfare attacks.</p>
+        </div>
+    </section>
+
+    <!-- Statistics Grid -->
+    <section class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-value" id="total-records">0</div>
+                <div class="stat-label">Total Records Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-value" id="normal-count">0</div>
+                <div class="stat-label">Normal Traffic</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+                <div class="stat-value" id="anomaly-count">0</div>
+                <div class="stat-label">Threats Detected</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-value" id="accuracy">98.5%</div>
+                <div class="stat-label">Detection Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌐</div>
+                <div class="stat-value" id="protocol-count">3</div>
+                <div class="stat-label">Protocols Monitored</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-value" id="services-count">0</div>
+                <div class="stat-label">Active Services</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔄</div>
+                <div class="stat-value" id="connections">0</div>
+                <div class="stat-label">Active Connections</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-value" id="response-time">
+                    < 1ms</div>
+                        <div class="stat-label">Avg Response Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🛡️</div>
+                    <div class="stat-value" id="blocked-attacks">0</div>
+                    <div class="stat-label">Blocked Attacks</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏰</div>
+                    <div class="stat-value" id="uptime">99.9%</div>
+                    <div class="stat-label">System Uptime</div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Threat Level Indicator -->
+    <section class="container">
+        <div class="threat-level">
+            <h2 class="text-center" style="color: var(--accent-cyan); margin-bottom: 20px;">
+                🔐 CURRENT THREAT LEVEL
+            </h2>
+            <div class="threat-gauge">
+                <div class="gauge-circle">
+                    <div class="gauge-inner">
+                        <div class="threat-status" id="threat-status">SECURE</div>
+                        <div style="color: var(--text-secondary); margin-top: 10px;">System Status</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center" style="color: var(--text-secondary); font-size: 1.1rem;">
+                All systems operational. Network traffic within normal parameters.
+            </p>
+        </div>
+    </section>
+
+    <!-- Real-Time Detection Panel -->
+    <section class="container">
+        <div class="detection-panel">
+            <h2 style="color: var(--accent-cyan); margin-bottom: 20px;">
+                📡 LIVE DETECTION FEED
+            </h2>
+            <div class="detection-log" id="detection-log">
+                <div class="log-entry safe">
+                    <strong>[SYSTEM]</strong> Intrusion Detection System initialized successfully
+                </div>
+                <div class="log-entry safe">
+                    <strong>[SYSTEM]</strong> ML Model loaded - SVM Classifier ready
+                </div>
+                <div class="log-entry safe">
+                    <strong>[SYSTEM]</strong> Monitoring network traffic...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="container">
+        <h2 class="text-center" style="color: var(--accent-cyan); margin: 40px 0;">
+            📈 NETWORK ANALYSIS
+        </h2>
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Protocol Distribution</h3>
+                <canvas id="protocolChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Attack Type Analysis</h3>
+                <canvas id="attackChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Top Services</h3>
+                <canvas id="servicesChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Detection Timeline</h3>
+                <canvas id="timelineChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Flag Distribution</h3>
+                <canvas id="flagChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Traffic Volume Analysis</h3>
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Information -->
+    <section class="container mt-4 mb-4">
+        <div class="detection-panel">
+            <h2 style="color: var(--accent-cyan); margin-bottom: 20px;">
+                🤖 MACHINE LEARNING MODEL
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Algorithm</h4>
+                    <p style="color: var(--text-secondary);">Support Vector Machine (SVM) with RBF Kernel</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Features</h4>
+                    <p style="color: var(--text-secondary);">42 network traffic features including protocol, service,
+                        and statistical metrics</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Training Data</h4>
+                    <p style="color: var(--text-secondary);">25,192 network traffic records</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Performance</h4>
+                    <p style="color: var(--text-secondary);">High accuracy with low false positive rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--secondary-bg); padding: 30px 0; margin-top: 60px; border-top: 2px solid var(--accent-cyan);">
+        <div class="container text-center">
+            <p style="color: var(--text-secondary); margin-bottom: 10px;">
+                © 2026 Cyber Warfare Intrusion Detection System
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Powered by Machine Learning | Built with Flask & Python
+            </p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
