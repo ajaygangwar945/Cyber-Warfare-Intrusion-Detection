@@ -14,8 +14,6 @@
 
 </div>
 
----
-
 <div align="center">
 
 ### 🌐 **[Live Demo](https://cyber-warfare-intrusion-detection.onrender.com/)** 🌐
