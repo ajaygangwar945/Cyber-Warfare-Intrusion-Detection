@@ -12,13 +12,20 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-00d4ff?style=for-the-badge)](https://cyber-warfare-intrusion-detection.onrender.com)
-
 </div>
 
+---
+
+### 🌐 **[Live Demo](https://cyber-warfare-intrusion-detection.onrender.com/)** 🌐
+
+[![Render Deploy Status](https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://cyber-warfare-intrusion-detection.onrender.com)
+
+*An interactive, real-time intrusion detection dashboard with ML-powered threat analysis, featuring dark/light mode, 10 statistics cards, and 6 interactive charts.*
+
+---
+
 <p align="center">
-<b>Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning</b><br>
-🔗 <a href="https://cyber-warfare-intrusion-detection.onrender.com" target="_blank"><b>Live Demo Available!</b></a>
+<b>Detecting, Analyzing, and Preventing Cyber Attacks Using Machine Learning</b>
 </p>
 
 ---
