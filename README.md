@@ -16,11 +16,15 @@
 
 ---
 
+<div align="center">
+
 ### 🌐 **[Live Demo](https://cyber-warfare-intrusion-detection.onrender.com/)** 🌐
 
 [![Render Deploy Status](https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://cyber-warfare-intrusion-detection.onrender.com)
 
 *An interactive, real-time intrusion detection dashboard with ML-powered threat analysis, featuring dark/light mode, 10 statistics cards, and 6 interactive charts.*
+
+</div>
 
 ---
 
