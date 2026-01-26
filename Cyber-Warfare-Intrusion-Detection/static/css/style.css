@@ -488,39 +488,56 @@ header .container {
         padding: 10px;
     }
 
+    header {
+        padding: 10px 0;
+        /* Reduced padding */
+    }
+
     header .container {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+        /* Reduced gap */
     }
 
     header .logo {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        /* Horizontal logo/title */
+        text-align: left;
         gap: 10px;
     }
 
     header .logo-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
     }
 
     header h2 {
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
+        margin: 0 !important;
+    }
+
+    /* Hide subtitle on mobile */
+    header .logo p {
+        display: none;
     }
 
     /* Target the button container in header */
     header .container>div:last-child {
-        flex-direction: column;
+        flex-direction: row;
+        /* Side-by-side buttons */
         width: 100%;
-        gap: 8px !important;
-        /* Override inline style */
+        gap: 10px !important;
+        justify-content: center;
     }
 
     .btn {
-        width: 100%;
-        padding: 10px 15px;
-        font-size: 0.85rem;
+        flex: 1;
+        /* Make buttons scale evenly */
+        width: auto;
+        padding: 8px 10px;
+        font-size: 0.8rem;
+        white-space: nowrap;
     }
 
     h1 {
