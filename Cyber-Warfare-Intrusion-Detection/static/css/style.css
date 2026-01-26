@@ -535,9 +535,17 @@ header .container {
         flex: 1;
         /* Make buttons scale evenly */
         width: auto;
-        padding: 8px 10px;
-        font-size: 0.8rem;
+        padding: 8px 5px;
+        /* Reduced padding */
+        font-size: 0.75rem;
+        /* Slightly smaller font */
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mobile-hidden {
+        display: none;
     }
 
     h1 {
