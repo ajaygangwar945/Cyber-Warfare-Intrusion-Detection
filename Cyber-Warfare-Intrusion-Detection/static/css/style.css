@@ -90,7 +90,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background: linear-gradient(135deg, var(--accent-cyan), var(--accent-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,13 +112,15 @@ h1 {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
+    /* Reduced from 20px */
 }
 
 /* Header */
 header {
     background: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
-    padding: 30px 0;
+    padding: 20px 0;
+    /* Reduced from 30px */
     border-bottom: 2px solid var(--accent-cyan);
     box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
     position: sticky;
@@ -167,14 +169,16 @@ header .container {
 
 /* Hero Section */
 .hero {
-    padding: 60px 0;
+    padding: 40px 0;
+    /* Reduced from 60px */
     text-align: center;
     position: relative;
 }
 
 .hero h1 {
     margin-bottom: 20px;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+    /* Reduced from 3.5rem */
 }
 
 .hero p {
@@ -188,15 +192,18 @@ header .container {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin: 40px 0;
+    gap: 20px;
+    /* Reduced from 25px */
+    margin: 25px 0;
+    /* Reduced from 40px */
 }
 
 .stat-card {
     background: var(--card-bg);
     border: 1px solid rgba(0, 212, 255, 0.3);
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
+    /* Reduced from 30px */
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -227,11 +234,13 @@ header .container {
 }
 
 .stat-value {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    /* Reduced from 3rem */
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
     color: var(--accent-green);
-    margin: 15px 0;
+    margin: 10px 0;
+    /* Reduced from 15px */
     text-shadow: var(--glow-green);
 }
 
@@ -250,8 +259,10 @@ header .container {
 
 /* Threat Level Indicator */
 .threat-level {
-    margin: 50px 0;
-    padding: 40px;
+    margin: 30px 0;
+    /* Reduced from 50px */
+    padding: 25px;
+    /* Reduced from 40px */
     background: var(--card-bg);
     border-radius: 20px;
     border: 1px solid rgba(0, 212, 255, 0.3);
@@ -312,8 +323,10 @@ header .container {
     background: var(--card-bg);
     border: 1px solid rgba(0, 212, 255, 0.3);
     border-radius: 15px;
-    padding: 30px;
-    margin: 30px 0;
+    padding: 20px;
+    /* Reduced from 30px */
+    margin: 25px 0;
+    /* Reduced from 30px */
     backdrop-filter: blur(10px);
 }
 
@@ -362,15 +375,18 @@ header .container {
 .charts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
+    gap: 25px;
+    /* Reduced from 30px */
+    margin: 25px 0;
+    /* Reduced from 40px */
 }
 
 .chart-card {
     background: var(--card-bg);
     border: 1px solid rgba(0, 212, 255, 0.3);
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
+    /* Reduced from 30px */
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
@@ -468,25 +484,132 @@ header .container {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header .logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header .logo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    header h2 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Target the button container in header */
+    header .container>div:last-child {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px !important;
+        /* Override inline style */
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 20px 0;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        margin-bottom: 20px;
     }
 
     .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for better space usage */
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .stat-card {
+        padding: 10px;
+        /* Reduced padding for 2-col layout */
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        /* Smaller font for 2-col layout */
+        margin: 5px 0;
+    }
+
+    .stat-icon {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        line-height: 1.2;
     }
 
     .charts-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .chart-card {
+        padding: 10px;
+        min-height: 250px;
+        /* Ensure charts have height */
+    }
+
+    .threat-level {
+        padding: 20px;
+        margin: 30px 0;
     }
 
     .threat-gauge {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        margin: 20px auto;
+    }
+
+    .threat-status {
+        font-size: 1.5rem;
+    }
+
+    .detection-panel {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .detection-log {
+        font-size: 0.75rem;
+        max-height: 300px;
     }
 }
 
