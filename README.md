@@ -89,25 +89,23 @@ This project demonstrates real-world applications of <b>Cyber Security</b>, <b>D
 ## 📂 Project Structure
 
 ```text
-CyberWarfare-Intrusion-Detection/
+Cyber-Warfare-Intrusion-Detection/
 │
-├── dataset/
-│   └── network_data.csv
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   │   └── favicon.svg
+│   └── js/
+│       └── main.js
 │
-├── notebooks/
-│   └── intrusion_detection.ipynb
+├── templates/
+│   └── index.html
 │
-├── src/
-│   ├── preprocessing.py
-│   ├── model_training.py
-│   └── prediction.py
-│
-├── results/
-│   ├── accuracy_report.png
-│   └── confusion_matrix.png
-│
-├── README.md
-└── requirements.txt
+├── app.py
+├── intrusion_model.pkl
+├── requirements.txt
+└── run.bat
 ```
 
 ---
@@ -410,23 +408,6 @@ The web application processes:
 **Fonts**:
 
 * Google Fonts (Orbitron, Rajdhani, Roboto Mono)
-
-### 📁 Web App Structure
-
-```
-Cyber-Warfare-Intrusion-Detection/
-├── app.py                    # Flask backend
-├── requirements.txt          # Python dependencies
-├── README_WEB.md            # Detailed web app docs
-├── templates/
-│   └── index.html           # Dashboard UI
-└── static/
-    ├── css/
-    │   └── style.css        # Cyber theme styles
-    ├── js/
-    │   └── main.js          # Interactive features
-    └── images/              # Image assets
-```
 
 ### 🔧 Customization
 

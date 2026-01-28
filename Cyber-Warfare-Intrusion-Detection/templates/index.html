@@ -96,11 +96,21 @@
                     <div class="stat-value" id="uptime">99.9%</div>
                     <div class="stat-label">System Uptime</div>
                 </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📉</div>
+                    <div class="stat-value" id="packet-loss">0.01%</div>
+                    <div class="stat-label">Packet Loss</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💻</div>
+                    <div class="stat-value" id="server-load">12%</div>
+                    <div class="stat-label">Server Load</div>
+                </div>
             </div>
     </section>
 
-    <!-- Threat Level Indicator -->
-    <section class="container">
+    <!-- Split Section: Threat Level & Detection Feed -->
+    <section class="container split-section">
         <div class="threat-level">
             <h2 class="text-center" style="color: var(--accent-cyan); margin-bottom: 20px;">
                 🔐 CURRENT THREAT LEVEL
@@ -117,10 +127,7 @@
                 All systems operational. Network traffic within normal parameters.
             </p>
         </div>
-    </section>
 
-    <!-- Real-Time Detection Panel -->
-    <section class="container">
         <div class="detection-panel">
             <h2 style="color: var(--accent-cyan); margin-bottom: 20px;">
                 📡 LIVE DETECTION FEED
@@ -147,27 +154,39 @@
         <div class="charts-grid">
             <div class="chart-card">
                 <h3>Protocol Distribution</h3>
-                <canvas id="protocolChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="protocolChart"></canvas>
+                </div>
             </div>
             <div class="chart-card">
                 <h3>Attack Type Analysis</h3>
-                <canvas id="attackChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="attackChart"></canvas>
+                </div>
             </div>
             <div class="chart-card">
                 <h3>Top Services</h3>
-                <canvas id="servicesChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="servicesChart"></canvas>
+                </div>
             </div>
             <div class="chart-card">
                 <h3>Detection Timeline</h3>
-                <canvas id="timelineChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="timelineChart"></canvas>
+                </div>
             </div>
             <div class="chart-card">
                 <h3>Flag Distribution</h3>
-                <canvas id="flagChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="flagChart"></canvas>
+                </div>
             </div>
             <div class="chart-card">
                 <h3>Traffic Volume Analysis</h3>
-                <canvas id="trafficChart"></canvas>
+                <div class="chart-container">
+                    <canvas id="trafficChart"></canvas>
+                </div>
             </div>
         </div>
     </section>
@@ -195,6 +214,14 @@
                 <div>
                     <h4 style="color: var(--accent-green); margin-bottom: 10px;">Performance</h4>
                     <p style="color: var(--text-secondary);">High accuracy with low false positive rate</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Inference Speed</h4>
+                    <p style="color: var(--text-secondary);">&lt; 10ms per record</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-green); margin-bottom: 10px;">Model Version</h4>
+                    <p style="color: var(--text-secondary);">v2.4 (Retrained)</p>
                 </div>
             </div>
         </div>

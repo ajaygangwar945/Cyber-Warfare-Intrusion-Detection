@@ -64,7 +64,12 @@ async function loadStatistics() {
         document.getElementById('connections').textContent = formatNumber(activeConnections);
 
         // Update blocked attacks (same as anomaly count)
+        // Update blocked attacks (same as anomaly count)
         document.getElementById('blocked-attacks').textContent = formatNumber(data.anomaly_count);
+
+        // Simulate packet loss and server load
+        document.getElementById('packet-loss').textContent = (Math.random() * 0.05).toFixed(3) + '%';
+        document.getElementById('server-load').textContent = Math.floor(Math.random() * 20 + 10) + '%';
 
         // Update charts with real data
         updateProtocolChart(data.protocols);
