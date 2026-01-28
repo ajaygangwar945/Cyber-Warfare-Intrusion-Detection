@@ -103,11 +103,12 @@ Cyber-Warfare-Intrusion-Detection/
 ├── templates/
 │   └── index.html
 │
-├── app.py
-├── intrusion_model.pkl
-├── CyberWarfareIntrusionDetection.csv
-├── requirements.txt
-└── run.bat
+├── app.py                      # Flask Application
+├── intrusion_model.pkl          # Trained ML Model
+├── CyberWarfareIntrusionDetection.csv    # Consolidated Dataset
+├── CyberWarfareIntrusionDetection.ipynb  # Analysis & EDA Notebook
+├── requirements.txt             # Dependencies
+└── run.bat                      # One-Step Run Script (Windows)
 ```
 
 ---
