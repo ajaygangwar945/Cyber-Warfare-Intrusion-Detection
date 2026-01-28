@@ -75,6 +75,7 @@ async function loadStatistics() {
         updateProtocolChart(data.protocols);
         updateServicesChart(data.services);
         updateFlagChart(data.flags);
+        updateAttackChart(data.normal_count, data.anomaly_count);
         updateTrafficChart(data.normal_count, data.anomaly_count);
 
     } catch (error) {
@@ -398,6 +399,14 @@ function updateProtocolChart(protocols) {
         charts.protocol.data.labels = labels;
         charts.protocol.data.datasets[0].data = data;
         charts.protocol.update();
+    }
+}
+
+// Update attack count chart with real data
+function updateAttackChart(normalCount, anomalyCount) {
+    if (charts.attack) {
+        charts.attack.data.datasets[0].data = [normalCount, anomalyCount];
+        charts.attack.update();
     }
 }
 

@@ -94,6 +94,10 @@ def index():
 @app.route('/api/stats')
 def get_stats():
     """Get dataset statistics"""
+    global df_stats
+    if df_stats is None:
+        load_model_and_data()
+        
     if df_stats is None:
         return jsonify({'error': 'Data not loaded'}), 500
     
@@ -177,11 +181,10 @@ def health_check():
     """Health check endpoint for Render"""
     return jsonify({'status': 'healthy'}), 200
 
+# Load model and data on startup (for all environments)
+load_model_and_data()
+
 if __name__ == '__main__':
-    # Load model and data on startup
-    if load_model_and_data():
-        print("Starting Flask application...")
-        port = int(os.environ.get("PORT", 5000))
-        app.run(debug=False, host='0.0.0.0', port=port)
-    else:
-        print("Failed to load model and data. Please check the files.")
+    print("Starting Flask application...")
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
