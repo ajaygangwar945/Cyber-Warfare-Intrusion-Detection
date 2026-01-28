@@ -1,4 +1,4 @@
-<img align="center" src="Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png">
+<img align="center" src="Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png" width="100%" height="300px">
 <h1 align="center"> 🛡️ Cyber Warfare Intrusion Detection System </h1>
 
 <div align="center">
@@ -150,6 +150,15 @@ Simply run the batch file to set up the environment and start the app:
 
 ---
 
+## 📊 Exploratory Data Analysis (EDA)
+
+The project includes as consolidated Jupyter Notebook for deep analysis. You can explore the dataset, model training, and visualizations:
+
+* 📓 **Notebook**: [CyberWarfareIntrusionDetection.ipynb](CyberWarfareIntrusionDetection.ipynb)
+* 📈 **Features**: Data visualization, correlation analysis, and algorithm comparison.
+
+---
+
 ## 📊 Results & Performance
 
 * 📈 **High Detection Accuracy** using ensemble models  
@@ -201,21 +210,6 @@ Simply run the batch file to set up the environment and start the app:
 
 * **Build Command:** `pip install -r requirements.txt`
 * **Start Command:** `gunicorn app:app`
-
----
-
-## 📬 Contact
-
-**Ajay Gangwar**  
-
-🎓 Student | Cyber Security | Data Science  
-
-<div align="left">
-
-[![GitHub](https://img.shields.io/badge/GitHub-ajaygangwar945-181717?style=for-the-badge&logo=github)](https://github.com/ajaygangwar945)
-[![Email](https://img.shields.io/badge/Email-Contact-blue?style=for-the-badge&logo=gmail)](mailto:ajayganwar945@gmail.com)
-
-</div>
 
 ---
 
