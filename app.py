@@ -22,7 +22,7 @@ def load_model_and_data():
     
     try:
         # Load the dataset for statistics
-        csv_path = os.path.join(os.path.dirname(__file__), '..', 'CyberWarfareIntrusionDetection.csv')
+        csv_path = os.path.join(os.path.dirname(__file__), 'CyberWarfareIntrusionDetection.csv')
         df = pd.read_csv(csv_path)
         
         # Store statistics
