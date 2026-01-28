@@ -1,3 +1,4 @@
+<img align="center" src="Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png">
 <h1 align="center"> 🛡️ Cyber Warfare Intrusion Detection System </h1>
 
 <div align="center">
