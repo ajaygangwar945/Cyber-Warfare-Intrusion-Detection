@@ -172,6 +172,11 @@ def simulate_detection():
         'timestamp': pd.Timestamp.now().isoformat()
     })
 
+@app.route('/healthz')
+def health_check():
+    """Health check endpoint for Render"""
+    return jsonify({'status': 'healthy'}), 200
+
 if __name__ == '__main__':
     # Load model and data on startup
     if load_model_and_data():
