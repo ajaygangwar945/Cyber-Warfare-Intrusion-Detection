@@ -176,6 +176,7 @@ if __name__ == '__main__':
     # Load model and data on startup
     if load_model_and_data():
         print("Starting Flask application...")
-        app.run(debug=True, host='0.0.0.0', port=5000)
+        port = int(os.environ.get("PORT", 5000))
+        app.run(debug=False, host='0.0.0.0', port=port)
     else:
         print("Failed to load model and data. Please check the files.")
