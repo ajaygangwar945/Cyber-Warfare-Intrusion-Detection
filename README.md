@@ -1,4 +1,4 @@
-<img align="center" src="Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png" width="100%" height="300px">
+<img align="center" src="Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png" width="100%" height="200" style="object-fit: cover">
 <h1 align="center"> 🛡️ Cyber Warfare Intrusion Detection System </h1>
 
 <div align="center">
