@@ -55,12 +55,13 @@ This project demonstrates real-world applications of <b>Cyber Security</b>, <b>D
 
 ## ⚙️ Features
 
-* ✔️ Network traffic monitoring  
+* ✔️ Network traffic monitoring (Simulated)  
 * ✔️ Intrusion detection (Normal vs Attack)  
 * ✔️ Multi-attack classification  
 * ✔️ Machine learning–based prediction  
 * ✔️ Data preprocessing & feature extraction  
 * ✔️ Graphical visualization of results  
+* ✔️ **Simulated Live Traffic Generation** (for safe demonstration)  
 
 ---
 
@@ -198,7 +199,7 @@ The project includes as consolidated Jupyter Notebook for deep analysis. You can
 
 * **Real-Time Statistics Cards**: Total records, normal traffic, threats detected, accuracy
 * **Threat Level Gauge**: Animated circular indicator showing security status
-* **Live Detection Feed**: Scrolling log with color-coded entries (green=safe, red=threat)
+* **Live Detection Feed**: Scrolling log demonstrating real-time classification on **simulated traffic** (green=safe, red=threat)
 * **6 Interactive Charts** powered by Chart.js
 
 ---
