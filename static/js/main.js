@@ -3,6 +3,12 @@
 let simulationInterval = null;
 let isSimulating = false;
 let charts = {};
+let currentTextColor = '#e0e0e0';
+
+// Helper to get text color based on theme
+function getThemeTextColor() {
+    return document.body.classList.contains('light-mode') ? '#000000' : '#e0e0e0';
+}
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function () {
@@ -28,6 +34,9 @@ function toggleTheme() {
 
     // Update button
     updateThemeButton(isLightMode);
+
+    // Update all charts
+    updateChartColors();
 }
 
 // Update theme button text and icon
@@ -42,6 +51,31 @@ function updateThemeButton(isLightMode) {
         themeIcon.textContent = '☀️';
         themeToggle.childNodes[2].textContent = ' Light Mode';
     }
+}
+
+// Function to update chart colors when theme changes
+function updateChartColors() {
+    const textColor = getThemeTextColor();
+
+    Object.values(charts).forEach(chart => {
+        if (chart.options.plugins && chart.options.plugins.legend) {
+            chart.options.plugins.legend.labels.color = textColor;
+        }
+
+        if (chart.options.scales) {
+            if (chart.options.scales.x && chart.options.scales.x.ticks) {
+                chart.options.scales.x.ticks.color = textColor;
+            }
+            if (chart.options.scales.y && chart.options.scales.y.ticks) {
+                chart.options.scales.y.ticks.color = textColor;
+            }
+            if (chart.options.scales.r && chart.options.scales.r.ticks) {
+                chart.options.scales.r.ticks.color = textColor;
+            }
+        }
+
+        chart.update();
+    });
 }
 
 // Load statistics from API
@@ -109,15 +143,17 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     position: 'bottom',
                     labels: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
+                        padding: window.innerWidth < 480 ? 5 : 10,
+                        boxWidth: 12,
                         font: {
                             family: 'Rajdhani',
-                            size: 14
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     }
                 }
@@ -146,15 +182,17 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     position: 'bottom',
                     labels: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
+                        padding: window.innerWidth < 480 ? 5 : 10,
+                        boxWidth: 12,
                         font: {
                             family: 'Rajdhani',
-                            size: 14
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     }
                 }
@@ -178,14 +216,15 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     },
                     grid: {
@@ -194,9 +233,10 @@ function initializeCharts() {
                 },
                 x: {
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     },
                     grid: {
@@ -236,14 +276,15 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     },
                     grid: {
@@ -252,9 +293,10 @@ function initializeCharts() {
                 },
                 x: {
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     },
                     grid: {
@@ -265,10 +307,12 @@ function initializeCharts() {
             plugins: {
                 legend: {
                     labels: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
+                        padding: window.innerWidth < 480 ? 5 : 10,
+                        boxWidth: 12,
                         font: {
                             family: 'Rajdhani',
-                            size: 14
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     }
                 }
@@ -303,15 +347,17 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     position: 'bottom',
                     labels: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
+                        padding: window.innerWidth < 480 ? 5 : 10,
+                        boxWidth: 12,
                         font: {
                             family: 'Rajdhani',
-                            size: 12
+                            size: window.innerWidth < 480 ? 7 : (window.innerWidth < 768 ? 8 : 10)
                         }
                     }
                 }
@@ -319,7 +365,8 @@ function initializeCharts() {
             scales: {
                 r: {
                     ticks: {
-                        color: '#e0e0e0',
+                        display: false,
+                        color: getThemeTextColor(),
                         backdropColor: 'transparent'
                     },
                     grid: {
@@ -352,14 +399,15 @@ function initializeCharts() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         },
                         callback: function (value) {
                             return value.toLocaleString() + ' MB';
@@ -371,9 +419,10 @@ function initializeCharts() {
                 },
                 x: {
                     ticks: {
-                        color: '#e0e0e0',
+                        color: getThemeTextColor(),
                         font: {
-                            family: 'Rajdhani'
+                            family: 'Rajdhani',
+                            size: window.innerWidth < 480 ? 8 : (window.innerWidth < 768 ? 10 : 12)
                         }
                     },
                     grid: {

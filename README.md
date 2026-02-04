@@ -19,7 +19,7 @@
 
 [![Render Deploy Status](https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://cyber-warfare-intrusion-detection.onrender.com)
 
-*An interactive, real-time intrusion detection dashboard with ML-powered threat analysis, featuring dark/light mode, 10 statistics cards, and 6 interactive charts.*
+*An interactive, real-time intrusion detection dashboard with ML-powered threat analysis, featuring dark/light mode with optimized accessibility, 12 real-time statistics cards, and 6 interactive charts.*
 
 </div>
 
@@ -55,13 +55,23 @@ This project demonstrates real-world applications of <b>Cyber Security</b>, <b>D
 
 ## ⚙️ Features
 
+### 🔍 Core Functionality
+
 * ✔️ Network traffic monitoring (Simulated)  
 * ✔️ Intrusion detection (Normal vs Attack)  
 * ✔️ Multi-attack classification  
-* ✔️ Machine learning–based prediction  
+* ✔️ Machine learning–based prediction (SVM with RBF Kernel)  
 * ✔️ Data preprocessing & feature extraction  
-* ✔️ Graphical visualization of results  
 * ✔️ **Simulated Live Traffic Generation** (for safe demonstration)  
+
+### 🎨 Interactive Dashboard
+
+* ✔️ **Dark/Light Mode Toggle** with optimized accessibility and high contrast  
+* ✔️ **12 Real-Time Statistics Cards** displaying key metrics  
+* ✔️ **Animated Threat Level Gauge** with color-coded status  
+* ✔️ **Live Detection Feed** with timestamp logging  
+* ✔️ **6 Interactive Charts** (Protocol Distribution, Attack Analysis, Services, Timeline, Flags, Traffic Volume)  
+* ✔️ **Responsive Design** optimized for desktop and mobile devices  
 
 ---
 
@@ -91,23 +101,26 @@ This project demonstrates real-world applications of <b>Cyber Security</b>, <b>D
 ```text
 Cyber-Warfare-Intrusion-Detection/
 │
-├── static/
+├── static/                      # Frontend Assets
 │   ├── css/
-│   │   └── style.css
+│   │   └── style.css           # Modern Cyber Theme CSS with Dark/Light Mode Variables
 │   ├── images/
-│   │   └── favicon.svg
+│   │   └── favicon.svg         # Shield Icon Favicon
 │   └── js/
-│       └── main.js
+│       └── main.js             # Dashboard Logic, Chart.js Integration & Theme Toggle
 │
-├── templates/
-│   └── index.html
+├── templates/                   # Flask HTML Templates
+│   └── index.html              # Main Dashboard with 12 Stats Cards & 6 Charts
 │
-├── app.py                      # Flask Application
-├── intrusion_model.pkl          # Trained ML Model
-├── CyberWarfareIntrusionDetection.csv    # Consolidated Dataset
-├── CyberWarfareIntrusionDetection.ipynb  # Analysis & EDA Notebook
-├── requirements.txt             # Dependencies
-└── run.bat                      # One-Step Run Script (Windows)
+├── app.py                       # Flask Backend API (Stats, Simulation, Model Inference)
+├── intrusion_model.pkl          # Trained SVM Model (RBF Kernel, 98.5% Accuracy)
+├── CyberWarfareIntrusionDetection.csv     # Network Traffic Dataset (25,192 records)
+├── CyberWarfareIntrusionDetection.ipynb   # Jupyter Notebook (EDA, Training, Evaluation)
+├── requirements.txt             # Python Dependencies (Flask, Scikit-Learn, Pandas, etc.)
+├── run.bat                      # Windows Batch Script (Auto Setup & Launch)
+├── .gitignore                   # Git Exclusions (venv, __pycache__, .pkl)
+├── README.md                    # Project Documentation
+└── Gemini_Generated_Image_xbjvkqxbjvkqxbjv.png  # Header Banner Image
 ```
 
 ---
@@ -197,10 +210,27 @@ The project includes as consolidated Jupyter Notebook for deep analysis. You can
 
 ## 🎨 Interactive Dashboard Features
 
-* **Real-Time Statistics Cards**: Total records, normal traffic, threats detected, accuracy
-* **Threat Level Gauge**: Animated circular indicator showing security status
-* **Live Detection Feed**: Scrolling log demonstrating real-time classification on **simulated traffic** (green=safe, red=threat)
-* **6 Interactive Charts** powered by Chart.js
+### 📊 Statistics & Monitoring
+
+* **12 Real-Time Statistics Cards**: Total records, normal traffic, threats detected, detection accuracy, protocols monitored, active services, active connections, response time, blocked attacks, system uptime, packet loss, and server load
+* **Animated Threat Level Gauge**: Circular indicator with rotating gradient showing current security status
+* **Live Detection Feed**: Real-time scrolling log with color-coded entries (green=safe, red=threat) showing timestamp, protocol, service, and confidence levels
+
+### 📈 Data Visualization
+
+* **Protocol Distribution** (Doughnut Chart): TCP, UDP, ICMP traffic breakdown
+* **Attack Type Analysis** (Pie Chart): Normal vs Anomaly classification
+* **Top Services** (Bar Chart): Most active network services
+* **Detection Timeline** (Line Chart): Real-time threat detection over time
+* **Flag Distribution** (Polar Area Chart): Network flag analysis
+* **Traffic Volume Analysis** (Bar Chart): Data transfer metrics
+
+### 🎨 User Experience
+
+* **Dark/Light Mode Toggle**: Seamlessly switch between themes with optimized contrast and accessibility
+* **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+* **Modern Cyber Aesthetic**: Futuristic design with glowing accents, smooth animations, and glassmorphism effects
+* **Real-Time Updates**: Live simulation with auto-start detection after 3 seconds
 
 ---
 
